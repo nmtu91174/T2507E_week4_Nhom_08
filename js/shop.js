@@ -24,6 +24,8 @@ fetch("data/products.json")
         <h3 class="product-title">${product.title}</h3>
         <div class="rating">${ratingStars}</div>
         <p>
+        <!--${product.discountPercentage > 0 ? `<span class="old-price">$${product.price}</span>` : ""}-->
+        <!--<span class="product-price">$${discountPrice}</span>-->
           <span class="product-price">$${product.price}</span>
         </p>
         <button class="btn">ADD TO CART</button>
