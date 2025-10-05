@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare products page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/compare.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="nav-wrapper">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <p class="nav-p">Welcome to Handmade Shop</p>|
+                <div class="nav-left">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>|
+                    <li><a href="my-account.html">My Account</a></li>|
+                    <li><a href="#">Wishlist</a></li>|
+                    <li><a href="#">Blog</a></li>|
+                    <li><a href="login.html">Login</a></li>|
+                    <li><a href="register.html">Register</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- BODY -->
+    <main>
+        <h2>Compare Products</h2>
+        <div class="search-box">
+            <input type="text" id="product1" placeholder="Enter product ID or name for product 1">
+            <input type="text" id="product2" placeholder="Enter product ID or name for product 2">
+            <button onclick="compareProducts()">Compare</button>
+        </div>
+
+        <!-- Nơi hiển thị bảng so sánh -->
+        <div id="comparison"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div class="row footer-top-col-4 footer-1">
+            <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-1">
+                <aside id="wolverine-footer-logo-2" class="widget widget-footer-logo">
+                    <div class="footer-logo">
+                        <a href=""><img class="footer-logo-img" src="images/logo.png" alt="Handmade"></a>
+                        <div class="sub-description">
+                            Letterpress, gold foil stamping, and more. Quality, sustainable materials like thick 100%
+                            PCW
+                            paper and veg-based inks.</div>
+                    </div>
+                </aside>
+            </div>
+            <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-2">
+                <aside id="nav_menu-3" class="widget widget_nav_menu">
+                    <h4 class="widget-title"><span>Information</span></h4>
+                    <div class="menu-footer-information-container">
+                        <ul id="menu-footer-information" class="menu">
+                            <li id="menu-item-2430"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2430"><a
+                                    href="#">About Us</a></li>
+                            <li id="menu-item-2431"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2431"><a
+                                    href="#">Delivery Information</a></li>
+                            <li id="menu-item-2432"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2432"><a
+                                    href="#">Privacy policy</a></li>
+                            <li id="menu-item-2433"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2433"><a
+                                    href="#">Terms &amp; Conditions</a></li>
+                            <li id="menu-item-2434"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2434"><a
+                                    href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-3">
+                <aside id="nav_menu-4" class="widget widget_nav_menu">
+                    <h4 class="widget-title"><span>Extras</span></h4>
+                    <div class="menu-footer-extras-container">
+                        <ul id="menu-footer-extras" class="menu">
+                            <li id="menu-item-2435"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2435"><a
+                                    href="#">Brands</a></li>
+                            <li id="menu-item-2436"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2436"><a
+                                    href="#">Gift Vouchers</a></li>
+                            <li id="menu-item-2437"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2437"><a
+                                    href="#">Affiliates</a></li>
+                            <li id="menu-item-2438"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2438"><a
+                                    href="#">Specials</a></li>
+                            <li id="menu-item-2439"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2439"><a
+                                    href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="sidebar footer-sidebar col-md-3 col-sm-6 col-4">
+                <aside id="text-2" class="widget-title-s-font widget widget_text">
+                    <h4 class="widget-title"><span>Contact us</span></h4>
+                    <div class="textwidget">
+                        <ul class="footer-contact-us">
+                            <li>
+                                <i class="fa fa-map-marker p-color"></i>
+                                <span>
+                                    Great Store London Oxford Street, 012 United Kingdom.
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope p-color"></i>
+                                <span>
+                                    emailgreatstore@gmail.com
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone p-color"></i>
+                                <span>
+                                    (+92) 3456 7890
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script src="js/compare.js"></script>
+</body>
+
+</html>

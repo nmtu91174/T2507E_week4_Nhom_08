@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "title": "Handmade Clay Pot",
+      "price": 25,
+      "rating": 4.5,
+      "material": "Clay",
+      "description": "Traditional handmade clay pot for home decoration.",
+      "thumbnail": "images/claypot.jpg",
+      "origin": "Vietnam"
+    },
+    {
+      "id": 102,
+      "title": "Wooden Sculpture",
+      "price": 40,
+      "rating": 4.8,
+      "material": "Wood",
+      "description": "Beautiful wooden sculpture carved by skilled artisans.",
+      "thumbnail": "images/woodsculpture.jpg",
+      "origin": "Thailand"
+    },
+    {
+      "id": 103,
+      "title": "Paper Origami Set",
+      "price": 15,
+      "rating": 4.0,
+      "material": "Paper",
+      "description": "Origami set with colorful papers for creative folding.",
+      "thumbnail": "images/origami.jpg",
+      "origin": "Japan"
+    },
+    {
+      "id": 104,
+      "title": "Bamboo Basket",
+      "price": 20,
+      "rating": 4.3,
+      "material": "Bamboo",
+      "description": "Eco-friendly bamboo basket perfect for storage or decoration.",
+      "thumbnail": "images/bamboobasket.jpg",
+      "origin": "Vietnam"
+    },
+    {
+      "id": 105,
+      "title": "Ceramic Vase",
+      "price": 35,
+      "rating": 4.6,
+      "material": "Ceramic",
+      "description": "Elegant ceramic vase with hand-painted floral patterns.",
+      "thumbnail": "images/ceramicvase.jpg",
+      "origin": "China"
+    },
+    {
+      "id": 106,
+      "title": "Silk Lantern",
+      "price": 28,
+      "rating": 4.4,
+      "material": "Silk",
+      "description": "Colorful silk lanterns bringing warm light and charm to any room.",
+      "thumbnail": "images/silk-lantern.jpg",
+      "origin": "Vietnam"
+    },
+    {
+      "id": 107,
+      "title": "Stone Buddha Statue",
+      "price": 50,
+      "rating": 4.9,
+      "material": "Stone",
+      "description": "Hand-carved Buddha statue made from natural stone.",
+      "thumbnail": "images/stonebuddha.jpg",
+      "origin": "Nepal"
+    },
+    {
+      "id": 108,
+      "title": "Woven Wall Hanging",
+      "price": 22,
+      "rating": 4.2,
+      "material": "Cotton",
+      "description": "Colorful handwoven wall hanging for modern home decor.",
+      "thumbnail": "images/wallhanging.jpg",
+      "origin": "India"
+    },
+    {
+      "id": 109,
+      "title": "Leather Notebook",
+      "price": 30,
+      "rating": 4.5,
+      "material": "Leather",
+      "description": "Vintage leather-bound notebook for journaling or sketching.",
+      "thumbnail": "images/leathernotebook.jpg",
+      "origin": "Italy"
+    },
+    {
+      "id": 110,
+      "title": "Coconut Shell Bowl",
+      "price": 18,
+      "rating": 4.1,
+      "material": "Coconut Shell",
+      "description": "Eco-friendly handmade bowl made from natural coconut shells.",
+      "thumbnail": "images/coconutbowl.jpg",
+      "origin": "Philippines"
+    },
+    {
+      "id": 111,
+      "title": "Handwoven Scarf",
+      "price": 27,
+      "rating": 4.6,
+      "material": "Cotton",
+      "description": "Soft and warm handwoven scarf with traditional patterns.",
+      "thumbnail": "images/handwovenscarf.jpg",
+      "origin": "Laos"
+    },
+    {
+      "id": 112,
+      "title": "Rattan Chair",
+      "price": 55,
+      "rating": 4.7,
+      "material": "Rattan",
+      "description": "Comfortable rattan chair with a rustic look for your living room.",
+      "thumbnail": "images/rattanchair.jpg",
+      "origin": "Indonesia"
+    },
+    {
+      "id": 113,
+      "title": "Marble Coasters Set",
+      "price": 32,
+      "rating": 4.3,
+      "material": "Marble",
+      "description": "Elegant marble coasters set to protect your furniture in style.",
+      "thumbnail": "images/marblecoasters.jpg",
+      "origin": "India"
+    },
+    {
+      "id": 114,
+      "title": "Handmade Soap Pack",
+      "price": 12,
+      "rating": 4.4,
+      "material": "Natural Oils",
+      "description": "Set of handmade organic soaps with refreshing scents.",
+      "thumbnail": "images/soapset.jpg",
+      "origin": "Vietnam"
+    },
+    {
+      "id": 115,
+      "title": "Seashell Wind Chime",
+      "price": 16,
+      "rating": 4.2,
+      "material": "Seashell",
+      "description": "Delicate wind chime made from real seashells for a calming sound.",
+      "thumbnail": "images/seashellwindchime.jpg",
+      "origin": "Thailand"
+    },
+    {
+      "id": 116,
+      "title": "Hand-painted Fan",
+      "price": 14,
+      "rating": 4.0,
+      "material": "Silk",
+      "description": "Traditional hand-painted silk fan, perfect for summer or decoration.",
+      "thumbnail": "images/paintedfan.jpg",
+      "origin": "China"
+    },
+    {
+      "id": 117,
+      "title": "Recycled Paper Journal",
+      "price": 20,
+      "rating": 4.5,
+      "material": "Recycled Paper",
+      "description": "Eco-friendly journal made from 100% recycled paper.",
+      "thumbnail": "images/paperjournal.jpg",
+      "origin": "Nepal"
+    },
+    {
+      "id": 118,
+      "title": "Terracotta Tea Set",
+      "price": 45,
+      "rating": 4.7,
+      "material": "Terracotta",
+      "description": "Elegant handmade terracotta tea set with rustic finish.",
+      "thumbnail": "images/terracottateaset.jpg",
+      "origin": "Vietnam"
+    },
+    {
+      "id": 119,
+      "title": "Batik Tablecloth",
+      "price": 38,
+      "rating": 4.6,
+      "material": "Cotton",
+      "description": "Colorful batik tablecloth dyed using traditional methods.",
+      "thumbnail": "images/batikcloth.jpg",
+      "origin": "Indonesia"
+    },
+    {
+      "id": 120,
+      "title": "Handcrafted Jewelry Box",
+      "price": 42,
+      "rating": 4.8,
+      "material": "Wood",
+      "description": "Elegant wooden jewelry box with intricate carvings.",
+      "thumbnail": "images/jewelrybox.jpg",
+      "origin": "India"
+    }
+  ]
+}
