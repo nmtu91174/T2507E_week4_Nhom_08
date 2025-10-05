@@ -59,7 +59,7 @@ body {
     margin-right: 20px;
     font-size: 18px;
     font-weight: normal;
-    color: #ca0624;
+    color: #E8BE84;
 }
 
 /* Các item bên trái */
@@ -69,7 +69,7 @@ body {
 }
 
 .nav-left li i {
-    color: #ca0624;
+    color: #E8BE84;
 }
 
 .nav-left a {
@@ -109,6 +109,8 @@ main {
     width: 250px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .search-box button {
@@ -118,6 +120,8 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .search-box button:hover {
@@ -136,8 +140,10 @@ main {
 #comparison th,
 #comparison td {
     border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+    padding: 15px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 #comparison th {
