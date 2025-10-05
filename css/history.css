@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
-    background-color: #ffffff;
+    background: url('../images/2148271040.jpg') no-repeat center top/cover;
+    /* background-color: #ffffff; */
     color: #000000;
     line-height: 1.6;
     height: 100vh;
@@ -113,7 +114,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 240px 1fr;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     gap: 20px;
     padding: 0 20px;
