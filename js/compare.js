@@ -39,8 +39,8 @@ function compareProducts() {
       </tr>
       <tr>
         <td>Image</td>
-        <td><img src="${product1.thumbnail}" alt="${product1.title}" width="150"></td>
-        <td><img src="${product2.thumbnail}" alt="${product2.title}" width="150"></td>
+        <td><div class="img-box"><img src="${product1.thumbnail}" alt="${product1.title}"></div></td>
+        <td><div class="img-box"><img src="${product2.thumbnail}" alt="${product2.title}"></div></td>
       </tr>
       <tr>
         <td>Price</td>
