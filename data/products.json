@@ -7,7 +7,7 @@
       "rating": 4.5,
       "material": "Clay",
       "description": "Traditional handmade clay pot for home decoration.",
-      "thumbnail": "images/claypot.jpg",
+      "thumbnail": "images/compare/clay pot.webp",
       "origin": "Vietnam"
     },
     {
@@ -17,7 +17,7 @@
       "rating": 4.8,
       "material": "Wood",
       "description": "Beautiful wooden sculpture carved by skilled artisans.",
-      "thumbnail": "images/woodsculpture.jpg",
+      "thumbnail": "images/compare/sculpture.webp",
       "origin": "Thailand"
     },
     {
