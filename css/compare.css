@@ -12,6 +12,18 @@ body {
     height: 100vh;
 }
 
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Navigation Bar */
 .nav-wrapper {
     width: 100%;
@@ -23,6 +35,10 @@ body {
     /* margin-bottom: 20px; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
 }
 
 .nav {
@@ -30,9 +46,6 @@ body {
     /* background: url('../images/2147601894.jpg') no-repeat center top/cover; */
     /* background-color: burlywood; */
     padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .nav-menu {

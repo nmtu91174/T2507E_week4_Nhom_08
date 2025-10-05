@@ -27,7 +27,7 @@
       "rating": 4.0,
       "material": "Paper",
       "description": "Origami set with colorful papers for creative folding.",
-      "thumbnail": "images/origami.jpg",
+      "thumbnail": "images/compare/paper orgami.webp",
       "origin": "Japan"
     },
     {
@@ -37,7 +37,7 @@
       "rating": 4.3,
       "material": "Bamboo",
       "description": "Eco-friendly bamboo basket perfect for storage or decoration.",
-      "thumbnail": "images/bamboobasket.jpg",
+      "thumbnail": "images/compare/baboobasket.jpg",
       "origin": "Vietnam"
     },
     {
@@ -47,7 +47,7 @@
       "rating": 4.6,
       "material": "Ceramic",
       "description": "Elegant ceramic vase with hand-painted floral patterns.",
-      "thumbnail": "images/ceramicvase.jpg",
+      "thumbnail": "images/compare/Ceramic-Vase.webp",
       "origin": "China"
     },
     {
@@ -57,7 +57,7 @@
       "rating": 4.4,
       "material": "Silk",
       "description": "Colorful silk lanterns bringing warm light and charm to any room.",
-      "thumbnail": "images/silk-lantern.jpg",
+      "thumbnail": "images/compare/silk lantern.png",
       "origin": "Vietnam"
     },
     {
@@ -67,7 +67,7 @@
       "rating": 4.9,
       "material": "Stone",
       "description": "Hand-carved Buddha statue made from natural stone.",
-      "thumbnail": "images/stonebuddha.jpg",
+      "thumbnail": "images/compare/stone buddha.webp",
       "origin": "Nepal"
     },
     {
