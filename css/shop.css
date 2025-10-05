@@ -43,7 +43,7 @@ h1 {
 }
 
 .product-price {
-    color: #e63946;
+    color: #E8BE84;
     font-weight: bold;
 }
 
@@ -55,18 +55,19 @@ h1 {
 }
 
 .rating {
-    color: #ff3366;
+    color: #E8BE84;
     margin: 5px 0;
 }
 
 .btn {
-    background: black;
-    color: white;
+    background: #E8BE84;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
 }
 
 .btn:hover {
-    background: #444;
+    background: #005fa3;
+    color: #fff;
 }

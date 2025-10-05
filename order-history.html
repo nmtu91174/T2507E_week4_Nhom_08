@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compare products page</title>
+    <title>Order History</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/compare.css">
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/history.css">
 
 </head>
 
@@ -45,23 +44,102 @@
 
         </div>
     </div>
-
-
     <!-- BODY -->
-    <main>
-        <h2>Compare Products</h2>
-        <div class="search-box">
-            <input type="text" id="product1" placeholder="Enter product ID or name for product 1">
-            <input type="text" id="product2" placeholder="Enter product ID or name for product 2">
-            <button onclick="compareProducts()">Compare</button>
-        </div>
+    <div class="container">
+        <aside>
+            <ul>
+                <li class="nav-item active">View orders <span class="badge">3</span></li>
+                <li class="nav-item">Personal details</li>
+                <li class="nav-item">Change password</li>
+                <li class="nav-item">Payment methods</li>
+                <li class="nav-item">Manage addresses</li>
+                <li class="nav-item">Social accounts</li>
+                <li class="nav-item">Log out</li>
+            </ul>
+        </aside>
 
-        <!-- Nơi hiển thị bảng so sánh -->
-        <div id="comparison"></div>
-        <div class="products" id="products"></div>
+        <main>
+            <h1>Order history</h1>
+            <p class="sub">3 orders</p>
 
-        </div>
-    </main>
+            <!-- Order 1 -->
+            <article class="order-card">
+                <div class="order-status"><span class="dot green"></span> Dispatched</div>
+                <div class="order-body">
+                    <div class="items">
+                        <div class="product-item">
+                            <img src="images/compare/Ceramic-Vase.webp" alt="Product">
+                            <div class="meta">
+                                <div class="title">Arrives tomorrow</div>
+                                <div class="time">7am - 7pm</div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="images/compare/handmade-soap.webp" alt="Product">
+                            <div class="meta">
+                                <div class="title">Expected on Mon, 2 July</div>
+                                <div class="time">7am - 7pm</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn primary">Track order</button>
+                        <button class="btn secondary">View order details</button>
+                        <span class="link">Get invoice</span>
+                        <span class="link">Edit order</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Order 2 -->
+            <article class="order-card">
+                <div class="order-status"><span class="dot gray"></span> Delivered on 23 June</div>
+                <div class="order-body">
+                    <div class="items">
+                        <div class="product-item">
+                            <img src="images/" alt="Huawei Phone">
+                            <div class="meta">
+                                <div class="title">Huawei P20 Pro 128GB Smartphone</div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/60" alt="Keyboard Cover">
+                            <div class="meta">
+                                <div class="title">Microsoft Keyboard Cover for Surface Go</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn primary">Track order</button>
+                        <button class="btn secondary">View order details</button>
+                        <span class="link">Get invoice</span>
+                        <span class="link">Edit order</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Order 3 -->
+            <article class="order-card">
+                <div class="order-status"><span class="dot gray"></span> Delivered on 15 December, 2016</div>
+                <div class="order-body">
+                    <div class="items">
+                        <div class="product-item">
+                            <img src="https://via.placeholder.com/60" alt="Bosch Oven">
+                            <div class="meta">
+                                <div class="title">Bosch Serie 2 Electric Single Oven</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn primary">Track order</button>
+                        <button class="btn secondary">View order details</button>
+                        <span class="link">Get invoice</span>
+                        <span class="link">Edit order</span>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
 
     <!-- FOOTER -->
     <div class="footer-wrapper">
@@ -154,9 +232,6 @@
             </div>
         </div>
     </div>
-    <script src="js/compare.js"></script>
-    <script src="js/shop.js"></script>
-
 </body>
 
 </html>
