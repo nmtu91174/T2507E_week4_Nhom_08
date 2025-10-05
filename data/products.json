@@ -77,7 +77,7 @@
       "rating": 4.2,
       "material": "Cotton",
       "description": "Colorful handwoven wall hanging for modern home decor.",
-      "thumbnail": "images/wallhanging.jpg",
+      "thumbnail": "images/compare/woven.jpg",
       "origin": "India"
     },
     {
@@ -87,7 +87,7 @@
       "rating": 4.5,
       "material": "Leather",
       "description": "Vintage leather-bound notebook for journaling or sketching.",
-      "thumbnail": "images/leathernotebook.jpg",
+      "thumbnail": "images/compare/notebook.jpg",
       "origin": "Italy"
     },
     {
@@ -97,7 +97,7 @@
       "rating": 4.1,
       "material": "Coconut Shell",
       "description": "Eco-friendly handmade bowl made from natural coconut shells.",
-      "thumbnail": "images/coconutbowl.jpg",
+      "thumbnail": "images/compare/coconut.jpg",
       "origin": "Philippines"
     },
     {
@@ -107,7 +107,7 @@
       "rating": 4.6,
       "material": "Cotton",
       "description": "Soft and warm handwoven scarf with traditional patterns.",
-      "thumbnail": "images/handwovenscarf.jpg",
+      "thumbnail": "images/compare/scarf.avif",
       "origin": "Laos"
     },
     {
@@ -117,7 +117,7 @@
       "rating": 4.7,
       "material": "Rattan",
       "description": "Comfortable rattan chair with a rustic look for your living room.",
-      "thumbnail": "images/rattanchair.jpg",
+      "thumbnail": "images/compare/rattan.jpg",
       "origin": "Indonesia"
     },
     {
@@ -127,7 +127,7 @@
       "rating": 4.3,
       "material": "Marble",
       "description": "Elegant marble coasters set to protect your furniture in style.",
-      "thumbnail": "images/marblecoasters.jpg",
+      "thumbnail": "images/compare/coasters.jpg",
       "origin": "India"
     },
     {
@@ -137,7 +137,7 @@
       "rating": 4.4,
       "material": "Natural Oils",
       "description": "Set of handmade organic soaps with refreshing scents.",
-      "thumbnail": "images/soapset.jpg",
+      "thumbnail": "images/compare/handmade-soap.webp",
       "origin": "Vietnam"
     },
     {
@@ -147,7 +147,7 @@
       "rating": 4.2,
       "material": "Seashell",
       "description": "Delicate wind chime made from real seashells for a calming sound.",
-      "thumbnail": "images/seashellwindchime.jpg",
+      "thumbnail": "images/compare/shell.avif",
       "origin": "Thailand"
     },
     {
@@ -157,7 +157,7 @@
       "rating": 4.0,
       "material": "Silk",
       "description": "Traditional hand-painted silk fan, perfect for summer or decoration.",
-      "thumbnail": "images/paintedfan.jpg",
+      "thumbnail": "images/compare/fan.jpg",
       "origin": "China"
     },
     {
@@ -167,7 +167,7 @@
       "rating": 4.5,
       "material": "Recycled Paper",
       "description": "Eco-friendly journal made from 100% recycled paper.",
-      "thumbnail": "images/paperjournal.jpg",
+      "thumbnail": "images/compare/paper.jpg",
       "origin": "Nepal"
     },
     {
@@ -177,7 +177,7 @@
       "rating": 4.7,
       "material": "Terracotta",
       "description": "Elegant handmade terracotta tea set with rustic finish.",
-      "thumbnail": "images/terracottateaset.jpg",
+      "thumbnail": "images/compare/tea.jpg",
       "origin": "Vietnam"
     },
     {
@@ -187,7 +187,7 @@
       "rating": 4.6,
       "material": "Cotton",
       "description": "Colorful batik tablecloth dyed using traditional methods.",
-      "thumbnail": "images/batikcloth.jpg",
+      "thumbnail": "images/compare/cloth.jpg",
       "origin": "Indonesia"
     },
     {
@@ -197,7 +197,7 @@
       "rating": 4.8,
       "material": "Wood",
       "description": "Elegant wooden jewelry box with intricate carvings.",
-      "thumbnail": "images/jewelrybox.jpg",
+      "thumbnail": "images/compare/box.jpg",
       "origin": "India"
     }
   ]
