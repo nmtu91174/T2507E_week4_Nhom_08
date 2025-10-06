@@ -1,7 +1,11 @@
 //onmap
 function onMap(){
     document.getElementById("map").classList.toggle("hide");
-} 
+}
+
+function seeAllProduct(){
+    document.getElementById("hide-start").classList.toggle("all-product");
+}
 
 //code map
 let map;

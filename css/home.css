@@ -76,8 +76,7 @@ body {
 header .logo-color {
     color: burlywood;
 }
-
-header .pp:hover {
+header .pp:hover{
     color: #515151;
 }
 
@@ -123,9 +122,12 @@ header .nav-link {
     color: #ffffff;
     margin-right: 15px;
 }
-
-.offcanvas {
-    background-color: burlywood;
+.right-top-main-nav i:hover{
+    color: #3a3a3a;
+    transition: all o.3s ease;
+}
+.offcanvas{
+    background-color:burlywood;
 }
 
 @media (max-width: 992px) {
@@ -184,17 +186,24 @@ header .nav-link {
     color: #ffffff;
     font-weight: 400;
 }
-
-.section1 a {
+.find-location a:hover{
+    background-color: #3a3a3a;
+    transition: all 0.3s ease;
+}
+.section1 a{
     color: #3a3a3a;
 }
 
 .section1 a:hover {
     color: burlywood;
 }
-
-.section1 i {
+.section1 i{
     color: burlywood;
+    transition: all 0.3s ease;
+}
+.section1 .bi:hover{
+    display: inline-block;
+    transform: scale(1.2);
 }
 
 .section2 .text-port a {
@@ -210,6 +219,7 @@ header .nav-link {
     background-color: burlywood;
     border: 0;
     color: white;
+    transition: all 0.3s ease;
 }
 
 .section2 .text-port .aa {
@@ -353,4 +363,25 @@ header .nav-link {
 
 .hide {
     display: none;
+}
+.all-product{
+    display: none;
+}
+.load-more-button{
+    background-color: burlywood;
+    width: 150px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load-more-button:hover{
+    background-color: #3a3a3a;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
