@@ -11,7 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/history.css">
+    <!-- <link rel="stylesheet" href="css/history.css"> -->
+    <link rel="stylesheet" href="css/detail.css">
 
 </head>
 
@@ -38,11 +39,11 @@
                 </nav>
             </div>
         </div>
-        <div class="btn-cart">
+        <!-- <div class="btn-cart">
             <a href="compare.html"><i class="fa fa-shopping-cart"></i></a>
             <span class="cart-count">0</span>
 
-        </div>
+        </div> -->
     </div>
     <!-- BODY -->
     <div class="container">
@@ -59,92 +60,118 @@
         </aside>
 
         <main>
-            <h1>Order history</h1>
-            <p class="sub">3 orders</p>
-
-            <!-- Order 1 -->
-            <article class="order-card">
-                <div class="order-status"><span class="dot green"></span> Dispatched</div>
-                <div class="order-body">
-                    <div class="items">
-                        <div class="product-item">
-                            <img src="images/compare/Ceramic-Vase.webp" alt="Product">
-                            <div class="meta">
-                                <div class="title">Arrives tomorrow</div>
-                                <div class="time">7am - 7pm</div>
-                                <p>
-                                    Elegant ceramic vase with hand-painted floral patterns.
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <img src="images/compare/handmade-soap.webp" alt="Product">
-                            <div class="meta">
-                                <div class="title">Expected on Mon, 6 October</div>
-                                <div class="time">7am - 7pm</div>
-                                <p>
-                                    Natural handmade soap with essential oils and exfoliating ingredients.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="actions">
-                        <button class="btn primary">Track order</button>
-                        <a href="order-detail.html"><button class="btn secondary">View order details</button></a>
-                        <span class="link">Get invoice</span>
-                        <span class="link">Edit order</span>
-                    </div>
+            <!-- LEFT COLUMN -->
+            <section>
+                <div class="card">
+                    <h2 class="section-title">Order Information</h2>
+                    <table>
+                        <tr>
+                            <td>Order ID:</td>
+                            <td>#OD2025</td>
+                        </tr>
+                        <tr>
+                            <td>Status:</td>
+                            <td>In Delivery</td>
+                        </tr>
+                        <tr>
+                            <td>Created:</td>
+                            <td>Sep 22, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Confirmed:</td>
+                            <td>Sep 23, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Shipped:</td>
+                            <td>Sep 24, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Tracking Number:</td>
+                            <td>DHL123456789</td>
+                        </tr>
+                    </table>
                 </div>
-            </article>
 
-            <!-- Order 2 -->
-            <article class="order-card">
-                <div class="order-status"><span class="dot gray"></span> Delivered on 23 June</div>
-                <div class="order-body">
-                    <div class="items">
-                        <div class="product-item">
-                            <img src="images/compare/coconut.jpg" alt="">
-                            <div class="meta">
-                                <div class="title">Eco-friendly handmade bowl made from natural coconut shells.</div>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <img src="images/compare/coasters.jpg" alt="">
-                            <div class="meta">
-                                <div class="title">Elegant marble coasters set to protect your furniture in style.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="actions">
-                        <button class="btn primary">Track order</button>
-                        <button class="btn secondary">View order details</button>
-                        <span class="link">Get invoice</span>
-                        <span class="link">Edit order</span>
-                    </div>
+                <div class="card">
+                    <h2 class="section-title">Shipping Information</h2>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td>Hello Doe</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>234 567 890</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>somewhere i belong</td>
+                        </tr>
+                        <tr>
+                            <td>Courier:</td>
+                            <td>Express</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Method:</td>
+                            <td>Standard Shipping</td>
+                        </tr>
+                    </table>
                 </div>
-            </article>
 
-            <!-- Order 3 -->
-            <article class="order-card">
-                <div class="order-status"><span class="dot gray"></span> Delivered on 15 july, 2025</div>
-                <div class="order-body">
-                    <div class="items">
-                        <div class="product-item">
-                            <img src="images/compare/clay pot.webp" alt="">
-                            <div class="meta">
-                                <div class="title">Traditional handmade clay pot for home decoration.</div>
-                            </div>
+                <div class="card">
+                    <h2 class="section-title">Order History</h2>
+                    <ul class="order-history">
+                        <li>Created – Sep 22, 2025</li>
+                        <li>Confirmed – Sep 23, 2025</li>
+                        <li>Shipped – Sep 24, 2025</li>
+                    </ul>
+                </div>
+
+                <div class="actions">
+                    <button class="btn-buy-again">Buy Again</button>
+                </div>
+            </section>
+
+            <!-- RIGHT COLUMN -->
+            <aside>
+                <div class="card">
+                    <h2 class="section-title">Products</h2>
+                    <div class="product-card">
+                        <img src="images/compare/Ceramic-Vase.webp" alt="">
+                        <div class="product-info">
+                            <h4>Elegant ceramic vase with hand-painted floral patterns.</h4>
+                            <span>Qty: 1 | $35</span>
                         </div>
                     </div>
-                    <div class="actions">
-                        <button class="btn primary">Track order</button>
-                        <button class="btn secondary">View order details</button>
-                        <span class="link">Get invoice</span>
-                        <span class="link">Edit order</span>
+                    <div class="product-card">
+                        <img src="images/compare/handmade-soap.webp" alt="">
+                        <div class="product-info">
+                            <h4>Natural handmade soap with essential oils and exfoliating ingredients.</h4>
+                            <span>Qty: 1 | $12</span>
+                        </div>
                     </div>
+
+                    <hr style="border-color:#ddd; margin:15px 0;">
+                    <table>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>$47</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping:</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td>$57</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Method:</td>
+                            <td>Cash on Delivery (COD)</td>
+                        </tr>
+                    </table>
                 </div>
-            </article>
+            </aside>
         </main>
     </div>
 
