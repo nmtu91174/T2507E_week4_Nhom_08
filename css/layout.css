@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   background:
 
-    url("layout.png") no-repeat center center/cover;
+    url('layout.png') no-repeat center center/cover;
   min-height: 100vh;
   /* display: flex; */
   align-items: center;
@@ -109,8 +109,7 @@ body {
   }
 
   .nav {
-    max-width: 1200px;
-    background: #ffffff;
+    width: 100%;
     padding: 20px;
     position: sticky;
     top: 0;
