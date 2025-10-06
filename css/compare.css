@@ -1,7 +1,15 @@
+/* ==================== RESET & CƠ BẢN ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --max-w: 1400px;
+    --gutter: 20px;
+    --accent: #E8BE84;
+    --container-pad: 20px;
 }
 
 body {
@@ -9,9 +17,19 @@ body {
     background-color: #ffffff;
     color: #000000;
     line-height: 1.6;
-    height: 100vh;
+    min-height: 100vh;
+    /* thay height:100vh để tránh lỗi mobile */
 }
 
+/* Container dùng chung */
+.container {
+    width: 100%;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--container-pad);
+}
+
+/* ==================== TOP WRAPPER ==================== */
 .top-wrapper {
     position: sticky;
     top: 0;
@@ -28,65 +46,61 @@ body {
     margin-right: 20px;
 }
 
-
-.top-wrapper .btn-cart a {
-    font-size: 16px;
-    text-decoration: none;
-    color: #E8BE84;
-}
-
+.top-wrapper .btn-cart a,
 .top-wrapper .btn-cart .cart-count {
     font-size: 16px;
     text-decoration: none;
-    color: #E8BE84;
+    color: var(--accent);
 }
 
-/* Navigation Bar */
+/* ==================== NAVIGATION ==================== */
 .nav-wrapper {
     width: 100%;
-    max-width: 1400px;
-    /* height: 300px; */
+    max-width: var(--max-w);
     padding: 10px 20px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     margin: 0 auto;
-    /* margin-bottom: 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: sticky;
-    top: 0;
-    z-index: 1000; */
 }
 
 .nav {
     width: 100%;
-    /* background: url('../images/2147601894.jpg') no-repeat center top/cover; */
-    /* background-color: burlywood; */
-    padding: 20px;
+    padding: 20px 0;
+}
+
+/* Toggle button cho mobile */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--accent);
+    cursor: pointer;
 }
 
 .nav-menu {
     display: flex;
     justify-content: flex-end;
-    list-style: none;
     align-items: center;
+    list-style: none;
+    gap: 15px;
 }
 
 .nav-menu .nav-p {
-    margin-right: 20px;
     font-size: 18px;
     font-weight: normal;
-    color: #E8BE84;
+    color: var(--accent);
 }
 
-/* Các item bên trái */
+/* Bên trái */
 .nav-left li {
     display: inline-block;
     margin-right: 10px;
 }
 
 .nav-left li i {
-    color: #E8BE84;
+    color: var(--accent);
 }
 
 .nav-left a {
@@ -95,27 +109,48 @@ body {
     text-transform: capitalize;
     padding: 8px 12px;
     display: inline-block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s;
     transform-origin: center;
 }
 
 .nav-left a:hover {
-    /* display: inline-block; */
     color: #007BFF;
-    /* background: #00a6ff;
-  border-radius: 4px; */
     transform: scale(1.1);
 }
 
+/* Responsive menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        flex-direction: column;
+        background: #fff;
+        padding: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        z-index: 1002;
+    }
+}
+
+/* ==================== MAIN ==================== */
 main {
     padding: 20px;
     text-align: center;
     background: url('../images/2147601894.jpg') no-repeat center center/cover;
-    /* background-color: #ffffff; */
-    /* max-width: 1400px; */
     margin: 0 auto;
 }
 
+/* ==================== SEARCH BOX ==================== */
 .search-box {
     margin: 20px 0;
 }
@@ -123,7 +158,8 @@ main {
 .search-box input {
     padding: 10px;
     margin: 5px;
-    width: 250px;
+    width: 100%;
+    max-width: 400px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
@@ -132,7 +168,7 @@ main {
 
 .search-box button {
     padding: 10px 20px;
-    background: #E8BE84;
+    background: var(--accent);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
@@ -146,56 +182,52 @@ main {
     color: #ffffff;
 }
 
+/* ==================== BẢNG SO SÁNH ==================== */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 #comparison table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 100%;
-    max-width: 1400px;
+    max-width: var(--max-w);
     background: #ffffffed;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #comparison th,
 #comparison td {
-    border: 1px solid #E8BE84;
+    border: 1px solid var(--accent);
     padding: 15px;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
 }
 
-/* ===== Căn ảnh trong bảng so sánh ===== */
+/* Căn ảnh */
 #comparison tr:nth-child(2) td {
     height: 220px;
-    /* Chiều cao vùng ảnh */
     text-align: center;
     vertical-align: middle;
 }
 
-/* ===== Ảnh sản phẩm ===== */
+/* Ảnh sản phẩm */
 #comparison td img {
-    width: 180px;
-    /* Độ rộng cố định */
-    height: 100%;
-    /* Lấp đầy chiều cao của td */
+    width: min(180px, 40vw);
+    max-width: 100%;
+    height: auto;
     max-height: 200px;
-    /* Không vượt quá vùng ảnh */
     object-fit: cover;
-    /* Giữ tỉ lệ, cắt hợp lý */
     border-radius: 8px;
-    /* Bo góc nhẹ cho đẹp */
     display: block;
-    /* Loại bỏ khoảng trắng dưới ảnh */
     margin: 0 auto;
-    /* Căn giữa ảnh */
     transition: transform 0.3s ease;
 }
 
 #comparison td img:hover {
     transform: scale(1.05);
-    /* Hiệu ứng hover nhẹ */
 }
-
 
 .img-box {
     width: 100%;
@@ -206,34 +238,35 @@ main {
 }
 
 #comparison th {
-    background: #E8BE84;
+    background: var(--accent);
 }
 
-/* footer */
+@media (max-width: 600px) {
 
-/* ===== Footer Layout (4 cột) ===== */
+    #comparison th,
+    #comparison td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ==================== FOOTER ==================== */
 .footer-top-col-4 {
     display: flex;
     flex-wrap: wrap;
-    /* Cho phép xuống dòng khi màn hình nhỏ */
     justify-content: space-between;
-    /* Giãn đều các cột */
     background-color: #ffffff;
-    /* Màu nền footer */
     color: #000000;
-    padding: 50px 10%;
-    gap: 20px;
+    padding: 50px var(--container-pad);
+    gap: var(--gutter);
 }
 
-/* ===== Mỗi cột ===== */
 .footer-sidebar {
-    flex: 1 1 calc(25% - 20px);
-    /* Chia 4 cột (25% mỗi cột, trừ khoảng cách) */
-    min-width: 250px;
-    /* Đảm bảo không bị bóp nhỏ quá */
+    flex: 1 1 calc((100% - 3 * var(--gutter)) / 4);
+    min-width: 220px;
+    box-sizing: border-box;
 }
 
-/* ===== Căn chỉnh nội dung ===== */
 .footer-logo img {
     max-width: 150px;
     margin-bottom: 15px;
@@ -250,7 +283,7 @@ main {
     color: #000000;
     margin-bottom: 15px;
     text-transform: uppercase;
-    border-bottom: 2px solid #E8BE84;
+    border-bottom: 2px solid var(--accent);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -274,28 +307,25 @@ main {
 }
 
 .menu li a:hover {
-    color: #E8BE84;
+    color: var(--accent);
 }
 
-/* ===== Contact Info Icons ===== */
 .footer-contact-us i {
     margin-right: 10px;
-    color: #E8BE84;
+    color: var(--accent);
 }
 
-/* ===== Responsive cho tablet ===== */
+/* ===== Tablet ===== */
 @media (max-width: 992px) {
     .footer-sidebar {
-        flex: 1 1 calc(50% - 20px);
-        /* 2 cột trên tablet */
+        flex: 1 1 calc((100% - var(--gutter)) / 2);
     }
 }
 
-/* ===== Responsive cho mobile ===== */
+/* ===== Mobile ===== */
 @media (max-width: 600px) {
     .footer-sidebar {
         flex: 1 1 100%;
-        /* 1 cột trên điện thoại */
         text-align: center;
     }
 
@@ -307,3 +337,22 @@ main {
         text-align: center;
     }
 }
+
+/* ==================== TEXT & TYPOGRAPHY ==================== */
+h1 {
+    font-size: clamp(1.25rem, 3.2vw, 2rem);
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ==================== BUTTONS ==================== */
+button,
+.btn-cart a {
+    min-height: 44px;
+    padding: 10px 14px;
+}
+
+/* ==================== KẾT THÚC FILE ==================== */

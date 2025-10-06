@@ -58,6 +58,10 @@ body{
 header .logo-color{
     color: burlywood;
 }
+.logo-color:hover{
+    color: #3a3a3a;
+    transition: all 0.3s ease;
+}
 header .pp:hover{
     color: #515151;
 }
@@ -94,6 +98,10 @@ header .nav-link{
 .right-top-main-nav i{
     color: #ffffff;
     margin-right: 15px;
+}
+.right-top-main-nav i:hover{
+    color: #3a3a3a;
+    transition: all 0.3s ease;
 }
 .offcanvas{
     background-color:burlywood;
@@ -144,14 +152,23 @@ header .nav-link{
     color: #ffffff;
     font-weight: 400;
 }
+.find-location a:hover{
+    background-color: #3a3a3a;
+    transition: all 0.3s ease;
+}
 .section1 a{
     color: #3a3a3a;
 }
 .section1 a:hover{
     color: burlywood;
 }
-.section1 i{
+.section1 .bi{
+    display: inline-block;
     color: burlywood;
+    transition: all 0.3s ease;
+}
+.section1 .bi:hover{
+    transform: scale(1.2);
 }
 .section2 .text-port a{
     color: black;
@@ -165,6 +182,7 @@ header .nav-link{
     background-color: burlywood;
     border: 0;
     color: white;
+    transition: all 0.3s ease;
 }
 .section2 .text-port .aa{
     background-color: burlywood;
@@ -277,4 +295,25 @@ header .nav-link{
 }
 .hide{
     display: none;
+}
+.all-product{
+    display: none;
+}
+.load-more-button{
+    background-color: burlywood;
+    width: 150px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load-more-button:hover{
+    background-color: #3a3a3a;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
