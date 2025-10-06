@@ -195,7 +195,6 @@ input {
 }
 
 .nav {
-  max-width: 1200px;
   background: #ffffff;
   padding: 20px;
   position: sticky;
