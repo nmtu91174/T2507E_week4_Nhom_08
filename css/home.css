@@ -122,6 +122,10 @@ header .nav-link {
     color: #ffffff;
     margin-right: 15px;
 }
+.right-top-main-nav i:hover{
+    color: #3a3a3a;
+    transition: all o.3s ease;
+}
 .offcanvas{
     background-color:burlywood;
 }
@@ -182,6 +186,10 @@ header .nav-link {
     color: #ffffff;
     font-weight: 400;
 }
+.find-location a:hover{
+    background-color: #3a3a3a;
+    transition: all 0.3s ease;
+}
 .section1 a{
     color: #3a3a3a;
 }
@@ -194,6 +202,7 @@ header .nav-link {
     transition: all 0.3s ease;
 }
 .section1 .bi:hover{
+    display: inline-block;
     transform: scale(1.2);
 }
 
